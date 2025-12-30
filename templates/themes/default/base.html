@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Axemys Pay - Infraestructura de alto rendimiento para Cloud Hosting, Game Servers y Servidores Dedicados.">
+    <meta name="keywords" content="hosting, cloud, game servers, servidores dedicados, facturación, infraestructura">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Axemys Pay | Infraestructura Global">
+    <meta property="og:description" content="Gestiona tus servicios de infraestructura con precisión quirúrgica.">
+    <meta property="og:image" content="{% static 'img/og-image.png' %}">
+
+    <title>{% block title %}Axemys Pay | Infraestructura de Alto Rendimiento{% endblock %}</title>
+    
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    <link rel="shortcut icon" href="{% static "img/axemys_logo_trans.png" %}" type="image/x-icon">
+    </head>
+<body class="bg-primary-high min-h-screen flex flex-col" >
+    {% include "themes/default/components/navbar.html" %}
+
+    <main class="grow">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    {% include "themes/default/components/footer.html" %}
+
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+# Entorno Virtual y Python
+venv/
+__pycache__/
+*.pyc
+db.sqlite3
+
+# Variables de entorno (Seguridad)
+.env
+
+# Node.js y Frontend
+node_modules/
+npm-debug.log*
+# Si usas Tailwind, mantén el output.css fuera si se genera automáticamente
+static/css/output.css
+
+# Editores y Sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Django Media y Logs
+media/
+*.log

@@ -1,0 +1,42 @@
+/* 
+    Tailwind CSS Configuration File
+    This file imports Tailwind CSS and specifies the source files to scan for class names.
+*/
+@import "tailwindcss";
+@source "../../templates/**/*.html";
+@source "../js/**/*.js";
+/* 
+    Font Face Definition
+*/
+@font-face{
+    font-family: 'Inter';
+    src: url('../fonts/Inter_variable.woff2') format('.woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+/* 
+    Theme Colors
+*/
+@theme {
+
+    /*
+        This is the color palette used for the application's theme.
+        It defines primary and secondary colors with varying shades 
+    */
+    --color-primary-high: #161925;
+    --color-primary-low: #23395b;
+    --color-secondary-high: #406e8e;
+    --color-secondary-low: #8ea8c3;
+    --color-lowest: #cbf7ed;
+    /*
+        This is the generals colors used across the application.
+    */
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    /*
+        Font Family
+    */
+    --font-sans: 'Inter', sans-serif;
+}
